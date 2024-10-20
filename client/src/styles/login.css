@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0; /* Light background for the body */
+    margin: 0;
+    padding: 0;
+}
+
+.max-w-md {
+    max-width: 400px; /* Set a max width for the login card */
+    margin: auto; /* Center the card */
+    perspective: 1000px; /* Enable 3D perspective */
+}
+
+.card {
+    background-color: rgba(45, 55, 72, 0.9); /* Dark background with opacity */
+    backdrop-filter: blur(10px); /* Blurring effect */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    padding: 2rem; /* Padding for inner content */
+    border-radius: 1rem; /* Rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for card */
+    transform-style: preserve-3d; /* Preserve 3D transformations */
+}
+
+.card:hover {
+    transform: translateY(-5px) rotateX(2deg); /* Slight lift and tilt on hover */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.text-3xl {
+    font-size: 2rem; /* Font size for heading */
+    background: linear-gradient(to right, #4CAF50, #2E7D32); /* Gradient for heading */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Text transparency for gradient effect */
+}
+
+input {
+    width: 100%;
+    padding: 1rem; /* Padding inside input fields */
+    border: 2px solid #ccc; /* Border for inputs */
+    border-radius: 1rem; /* Rounded corners */
+    margin-bottom: 1rem; /* Margin for spacing */
+    font-size: 1rem; /* Font size for inputs */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transition effects for border */
+}
+
+input:focus {
+    border-color: #4CAF50; /* Focus border color */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Subtle glow effect on focus */
+}
+
+button {
+    width: 100%; /* Full width for buttons */
+    padding: 1rem; /* Padding for buttons */
+    border: none; /* Remove default border */
+    border-radius: 1rem; /* Rounded corners */
+    background-color: #4CAF50; /* Button background color */
+    color: white; /* Button text color */
+    font-size: 1rem; /* Font size for buttons */
+    cursor: pointer; /* Change cursor for buttons */
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; /* Transition effects for buttons */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Default button shadow */
+}
+
+button:hover {
+    background-color: #388E3C; /* Darken button on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+button:active {
+    transform: translateY(2px); /* Reset lift on click */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Return to original shadow */
+}
+
+.text-blue-400 {
+    color: #1E88E5; /* Blue color for links */
+}
+
+.text-blue-400:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+    .max-w-md {
+        width: 90%; /* Full width on smaller screens */
+    }
+}

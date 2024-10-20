@@ -1,0 +1,63 @@
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar h2 {
+    margin: 0 0 20px;
+}
+
+.sidebar-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-buttons button {
+    margin: 10px 0;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.profile-section {
+    margin-bottom: 20px;
+}
+
+.actions {
+    margin-bottom: 20px;
+}
+
+.notifications, .audit-logs {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .sidebar {
+    background-color: #444;
+}
+
+.dark-mode .sidebar h2,
+.dark-mode .notifications h3,
+.dark-mode .audit-logs h3 {
+    color: #fff;
+}
+
+.logout-btn {
+    background-color: red;
+    color: white;
+}
